@@ -81,8 +81,9 @@ try {
                                     Válido hasta: <?php echo date('d/m/Y', strtotime($producto['fecha_fin'])); ?>
                                 </small>
                             </div>
+                            <!-- Tarea 3 Corregida: Enlace funcional enviando el ID del producto -->
                             <div class="card-footer bg-white border-0">
-                                <button class="btn btn-primary w-100">Ver Detalles</button>
+                                <a href="detalle.php?id=<?php echo $producto['id']; ?>" class="btn btn-primary w-100">Ver Detalles</a>
                             </div>
                         </div>
                     </div>
